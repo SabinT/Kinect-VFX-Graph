@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.VFX;
+using UnityEngine.VFX;
 using Windows.Kinect;
 using KinectJoint = Windows.Kinect.Joint;
 
@@ -69,7 +69,7 @@ public class KinectSkeletonTracker : MonoBehaviour
     };
 
     // Start is called before the first frame update
-    void Start()
+    void Start ()
     {
         sensor = KinectSensor.GetDefault();
 
@@ -85,7 +85,7 @@ public class KinectSkeletonTracker : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
         if (bodyFrameReader != null)
         {
@@ -104,7 +104,8 @@ public class KinectSkeletonTracker : MonoBehaviour
                 List<ulong> trackedIds = new List<ulong>();
                 foreach (var body in bodies)
                 {
-                    if (body == null) continue;
+                    if (body == null)
+                        continue;
 
                     if (body.IsTracked)
                     {
@@ -139,12 +140,12 @@ public class KinectSkeletonTracker : MonoBehaviour
         }
     }
 
-    private static Vector3 GetVector3FromJoint(KinectJoint joint)
+    private static Vector3 GetVector3FromJoint (KinectJoint joint)
     {
         return new Vector3(joint.Position.X, joint.Position.Y, joint.Position.Z);
     }
 
-    private void OnDestroy()
+    private void OnDestroy ()
     {
         if (bodyFrameReader != null)
         {

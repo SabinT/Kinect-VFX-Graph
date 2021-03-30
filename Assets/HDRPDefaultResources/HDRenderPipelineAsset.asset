@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cf1dab834d4ec34195b920ea7bbf9ec, type: 3}
-  m_Name: HDRP
+  m_Name: HDRenderPipelineAsset
   m_EditorClassIdentifier: 
   m_Version: 18
   m_ObsoleteFrameSettings:
@@ -151,13 +151,14 @@ MonoBehaviour:
   m_RenderPipelineResources: {fileID: 11400000, guid: 3ce144cff5783da45aa5d4fdc2da14b7,
     type: 2}
   m_RenderPipelineRayTracingResources: {fileID: 0}
-  m_DefaultVolumeProfile: {fileID: 0}
+  m_DefaultVolumeProfile: {fileID: 11400000, guid: b0a5e9258ba3d984baa8c59fbe7e6fdf,
+    type: 2}
   m_LensAttenuation: 0
   m_UseRenderGraph: 1
   m_DefaultLookDevProfile: {fileID: 0}
   m_RenderingPathDefaultCameraFrameSettings:
     bitDatas:
-      data1: 72058620536094784
+      data1: 72198262773251917
       data2: 13763000468760363032
     lodBias: 1
     lodBiasMode: 0
@@ -171,7 +172,7 @@ MonoBehaviour:
     materialQuality: 0
   m_RenderingPathDefaultBakedOrCustomReflectionFrameSettings:
     bitDatas:
-      data1: 73014444096
+      data1: 135310754214733
       data2: 4539628428684427288
     lodBias: 1
     lodBiasMode: 0
@@ -185,8 +186,8 @@ MonoBehaviour:
     materialQuality: 0
   m_RenderingPathDefaultRealtimeReflectionFrameSettings:
     bitDatas:
-      data1: 425201762368
-      data2: 13763000465807638552
+      data1: 139923391782733
+      data2: 13763000465807638544
     lodBias: 1
     lodBiasMode: 0
     lodBiasQualityLevel: 0
@@ -257,7 +258,7 @@ MonoBehaviour:
       cookieFormat: 74
       cookieAtlasLastValidMip: 0
       cookieTexArraySize: 1
-      planarReflectionAtlasSize: 4096
+      planarReflectionAtlasSize: 1024
       reflectionProbeCacheSize: 64
       reflectionCubemapSize: 256
       reflectionCacheCompressed: 0
@@ -441,8 +442,8 @@ MonoBehaviour:
   m_DefaultMaterialQualityLevel: 4
   diffusionProfileSettings: {fileID: 0}
   diffusionProfileSettingsList:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: f6cb3bb8abc8d6b4689b4e9935f0cb0d, type: 2}
+  - {fileID: 11400000, guid: 8dc12eafe1628234188593ad9507d695, type: 2}
   beforeTransparentCustomPostProcesses: []
   beforeTAACustomPostProcesses: []
   beforePostProcessCustomPostProcesses: []
